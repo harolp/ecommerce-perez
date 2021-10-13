@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(27, 189, 170);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 50px;
+    padding-left: 20px;
+    color: rgb(20, 81, 83);
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding-left: 6rem;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    padding: 30px;
+    font-weight: bold;
+    color: rgb(14, 14, 87);
+}
