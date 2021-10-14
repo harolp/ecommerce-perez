@@ -1,0 +1,6 @@
+.cartWidge__icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    padding-right: 20px;
+}

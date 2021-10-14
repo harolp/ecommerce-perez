@@ -22,7 +22,8 @@ ul {
     list-style: none;
     display: flex;
     padding-left: 6rem;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 a {
@@ -30,4 +31,5 @@ a {
     padding: 30px;
     font-weight: bold;
     color: rgb(14, 14, 87);
+    margin: auto;
 }

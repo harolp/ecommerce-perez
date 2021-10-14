@@ -1,4 +1,5 @@
 import './NavBar.css';
+import { CartWidget } from '../CartWidget/CartWidget';
 
 export const NavBar = () => {
     return(
@@ -11,6 +12,7 @@ export const NavBar = () => {
                 <a href="https://www.coderhouse.cl/">Componentes</a>
                 <a href="https://www.coderhouse.cl/">PC Gamer</a>
                 <a href="https://www.coderhouse.cl/">Contactanos</a>
+                <CartWidget/>
             </ul>
         </nav>
     )
