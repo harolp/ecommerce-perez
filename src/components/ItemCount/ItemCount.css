@@ -1,0 +1,23 @@
+.btnRemove {
+    font-size: 20px;
+    background-color: silver;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btnAdd {
+    font-size: 20px;
+    background-color: silver;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inpt{
+    width: 100px;
+    height: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: skyblue;
+}
