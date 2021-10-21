@@ -2,17 +2,17 @@ import { useState } from "react";
 import './ItemCount.css'
 
 export const ItemCount = (props) => {
-    const [count, setCount] = useState(props.initial);
+    const [count, setCount] = useState(parseInt(props.initial));
 
     function onAdd (){
         if (count < props.stock){
-            setCount(count+1)
+            setCount(count + 1);
         }
     }
 
     function onRemove (){
-        if (count >= 1){
-            setCount(count-1)
+        if (count > 1){
+            setCount(count - 1);
         }
     }
 
