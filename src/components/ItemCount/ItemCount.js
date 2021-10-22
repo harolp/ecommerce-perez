@@ -18,7 +18,6 @@ export const ItemCount = (props) => {
 
     return (
         <div>
-            <h1> Contador minimalista :v = {count}</h1>
             <input className="inpt" type="text" value={count}/>
             <button className="btnRemove" onClick={onRemove}> - </button>
             <button className="btnAdd" onClick={onAdd}> + </button>
