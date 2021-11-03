@@ -4,34 +4,39 @@
         "id": 1,
         "title": "Conjunto de bebé 2 piezas",
 	    "stock": 10,
-        "thumbnailUrl": "src/components/img/img1.png"
+        "thumbnailUrl": "img/img1.png",
+        "description": "Aqui deberia ir una descripcion del producto."
     },
     {
         "price": 30000,
         "id": 2,
         "title": "Conjunto de bebé estampado Algodón",
 	    "stock": 10,
-        "thumbnailUrl": "https://prnt.sc/1wasiul"
+        "thumbnailUrl": "img/img2.png",
+        "description": "Aqui deberia ir una descripcion del producto."
     },
     {
         "price": 25000,
         "id": 3,
         "title": "Conjunto de bebé Niño",
 	    "stock": 5,
-        "thumbnailUrl": "https://prnt.sc/1wasnms"
+        "thumbnailUrl": "img/img3.png",
+        "description": "Aqui deberia ir una descripcion del producto."
     },
     {
         "price": 19000,
         "id": 4,
         "title": "Conjunto de bebé Floral",
 	    "stock": 10,
-        "thumbnailUrl": "https://prnt.sc/1wassl1"
+        "thumbnailUrl": "img/img4.png",
+        "description": "Aqui deberia ir una descripcion del producto."
     },
     {
         "price": 29000,
         "id": 5,
         "title": "Conjunto Unisex",
 	    "stock": 10,
-        "thumbnailUrl": "https://prnt.sc/1wasxz2"
+        "thumbnailUrl": "img/img5.png",
+        "description": "Aqui deberia ir una descripcion del producto."
     }
 ]

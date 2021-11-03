@@ -21,6 +21,7 @@ export const ItemCount = (props) => {
             <input className="inpt" type="text" value={count}/>
             <button className="btnRemove" onClick={onRemove}> - </button>
             <button className="btnAdd" onClick={onAdd}> + </button>
+            <button className="addCart">Agregar al carro</button>
         </div>
     )
 

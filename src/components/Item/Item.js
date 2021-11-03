@@ -1,6 +1,6 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 
-export const Item = ({id, title, stock, price, thumbnailUrl}) => {
+export const Item = ({title, stock, price, thumbnailUrl}) => {
     
     return (
         <div className="contenedorCard">
@@ -11,7 +11,7 @@ export const Item = ({id, title, stock, price, thumbnailUrl}) => {
             <h2>Precio: {price}</h2>
             <ItemCount stock={stock} initial="1"/>
         </div>
-    )
+    ) 
 }
 
 

@@ -3,33 +3,29 @@
     padding: 0;
 }
 
-nav {
-    background-color: rgb(27, 189, 170);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.title {
-    font-size: 50px;
-    padding-left: 20px;
-    color: rgb(20, 81, 83);
-    font-family: sans-serif;
-    padding-top: 10px;
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height:8vh;
+    background-color: rgb(228, 249, 248);
 }
 
 ul {
-    list-style: none;
     display: flex;
-    padding-left: 6rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    list-style-type: none;
+    transition: 0.3s;
 }
 
 a {
     text-decoration: none;
-    padding: 30px;
+    font-size: 1.4rem;
+    color: #374c56;
     font-weight: bold;
-    color: rgb(14, 14, 87);
-    margin: auto;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 20%;
+    padding: 10px 0px 10px 0px;
 }
