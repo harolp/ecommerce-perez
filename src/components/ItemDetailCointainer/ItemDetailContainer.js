@@ -4,7 +4,7 @@ import Productos from "../../Productos.json";
 
 export const ItemDetailContainer = () => {
 
-    const [itemDetail, setItemDetail] = useState();
+    const [itemDetail, setItemDetail] = useState([]);
 
     const getItemDetail = (data) =>
         new Promise((resolve,reject) => {
@@ -23,13 +23,17 @@ export const ItemDetailContainer = () => {
             .catch((err) => console.log(err));
         }, []);
 
-        console.log(itemDetail, "hola probando");
 
         return (
-             <div>
-                 <h3>PROBANDO DETALLE PRODUCTO</h3>
-                 <ItemDetail descripcion={itemDetail}/>
-             </div>
+            <>
+                    <div>
+                        <div >
+                            <h2>PROBANDO DETALLE</h2>
+                        </div>
+                            {itemDetail && itemDetail.map((descripcion) =>
+                            <ItemDetail items={descripcion} />)}
+                    </div>
+            </>
 
         );
 }

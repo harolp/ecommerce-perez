@@ -10,11 +10,11 @@ function App() {
     <Router>
       <NavBar/>
       <Switch>
-        <Route path="/ddf">
-          <ItemListContainer prueba="PROBANDO 1 2 3 " alo="CREO QUE ME RESULTO :v"/> 
-        </Route>
         <Route path="/test">
-        <ItemDetailContainer/>
+          <ItemDetailContainer/>
+        </Route>
+        <Route path="/">
+          <ItemListContainer prueba="PROBANDO 1 2 3 " alo="CREO QUE ME RESULTO :v"/> 
         </Route>
       </Switch>
     </Router>

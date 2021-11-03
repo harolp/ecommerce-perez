@@ -30,7 +30,7 @@ export const ItemListContainer = (props) => {
                             <h2>TESTEANDO</h2>
                         </div>
                             {products && products.map((articulos) =>
-                            <ItemList key={articulos.id} items={articulos.thumbnailUrl} items={articulos} />)}
+                            <ItemList key={articulos.id} items={articulos} />)}
                     </div>
             </>
             
