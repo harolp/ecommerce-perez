@@ -3,21 +3,24 @@ import './App.css';
 import {NavBar} from "./components/NavBar/NavBar";
 import {ItemListContainer} from "./components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from './components/ItemDetailCointainer/ItemDetailContainer';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <NavBar/>
       <Switch>
-        <Route path="/test">
+        <Route exact path="/">
+          <ItemListContainer/> 
+        </Route>
+        <Route path="/category/:categoryId">
+          <ItemListContainer/> 
+        </Route>
+        <Route path="/item/:itemId">
           <ItemDetailContainer/>
         </Route>
-        <Route path="/">
-          <ItemListContainer prueba="PROBANDO 1 2 3 " alo="CREO QUE ME RESULTO :v"/> 
-        </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 

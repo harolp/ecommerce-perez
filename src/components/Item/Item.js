@@ -1,15 +1,20 @@
 import { ItemCount } from "../ItemCount/ItemCount";
+import "./Item.css"
+import { Link } from "react-router-dom";
 
-export const Item = ({title, stock, price, thumbnailUrl}) => {
+export const Item = ({id, title, stock, price, thumbnailUrl}) => {
     
     return (
-        <div className="contenedorCard">
-            <div className="imgCard">
-                <img src={thumbnailUrl}/>
+        <div className="card">
+            <img className="imgCard" src={thumbnailUrl}/>
+            <div className="card-body">
+                <h5>{title}</h5>
+                <span>Precio: {price}</span>
+                <ItemCount stock={stock} initial="1"/>
             </div>
-            <h1>{title}</h1>
-            <h2>Precio: {price}</h2>
-            <ItemCount stock={stock} initial="1"/>
+            <Link to={'/item/${id}'}>
+                <button>Ver más</button>
+            </Link>
         </div>
     ) 
 }

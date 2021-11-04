@@ -1,10 +1,11 @@
 import './NavBar.css';
 import { CartWidget } from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
     return(
-        <nav>
-            <img src="../../img/logo.png" alt="logo" class="logo"></img>
+        <nav className="navBar">
+            <Link to={'/'}><img className="imgLogo" src="../../img/logo.png" alt="logo"/></Link>
             <ul>
                 <a href="https://www.coderhouse.cl/">Inicio</a>
                 <a href="https://www.coderhouse.cl/">Conjuntos</a>

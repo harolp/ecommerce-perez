@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import Productos from "../../Productos.json";
+import { useParams } from "react-router";
 
-export const ItemDetailContainer = () => {
+export const ItemDetailContainer = () => {   
 
-    const [itemDetail, setItemDetail] = useState([]);
+    const [itemDetail, setItemDetail] = useState([null]);
+
+    const {itemId} = useParams ();
 
     const getItemDetail = (data) =>
         new Promise((resolve,reject) => {
@@ -19,20 +22,26 @@ export const ItemDetailContainer = () => {
 
         useEffect(() => {
             getItemDetail(Productos)
-            .then((result) => setItemDetail(result))
+            .then((result) => { setItemDetail(result.find((details) => details.id === itemId));
+            })
             .catch((err) => console.log(err));
-        }, []);
-
+        }, [itemId]);
 
         return (
             <>
-                    <div>
-                        <div >
-                            <h2>PROBANDO DETALLE</h2>
-                        </div>
-                            {itemDetail && itemDetail.map((descripcion) =>
-                            <ItemDetail items={descripcion} />)}
-                    </div>
+                <h2>PROBANDO DETALLE</h2>
+                <div className="contenedor-detail">
+                    {itemDetail ? (
+                        <ItemDetail
+                            id={itemDetail.id}
+                            title={itemDetail.title}
+                            price={itemDetail.price}
+                            stock={itemDetail.stock}
+                            description={itemDetail.description}
+                            thumbnailUrl={itemDetail.thumbnailUrl}
+                        />
+                    ): ("testeando :(")}
+                </div>
             </>
 
         );

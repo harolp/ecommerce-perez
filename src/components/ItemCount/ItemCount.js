@@ -17,7 +17,7 @@ export const ItemCount = (props) => {
     }
 
     return (
-        <div>
+        <div className="alo">
             <input className="inpt" type="text" value={count}/>
             <button className="btnRemove" onClick={onRemove}> - </button>
             <button className="btnAdd" onClick={onAdd}> + </button>

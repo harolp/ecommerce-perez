@@ -1,9 +1,9 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 
-export const ItemDetail = ({title, stock, price, thumbnailUrl, description}) => {
+export const ItemDetail = ({id, title, stock, price, thumbnailUrl, description}) => {
 
     return (
-        <div>
+        <div key={id}>
             <img src={thumbnailUrl} alt="imgProducto"/>
             <h1 className="title-product">{title}</h1>
             <p className="description-product">{description}</p>
