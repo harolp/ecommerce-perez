@@ -7,10 +7,10 @@ export const NavBar = () => {
         <nav className="navBar">
             <Link to={'/'}><img className="imgLogo" src="../../img/logo.png" alt="logo"/></Link>
             <ul>
-                <a href="https://www.coderhouse.cl/">Inicio</a>
-                <a href="https://www.coderhouse.cl/">Conjuntos</a>
-                <a href="https://www.coderhouse.cl/">Vestidos</a>
-                <a href="https://www.coderhouse.cl/">Contactanos</a>
+                <li><Link className="nav-style" to="/">Inicio</Link></li>
+                <li><Link className="nav-style" to="/category/rojo">Conjuntos</Link></li>
+                <li><Link className="nav-style" to="/category/azul">Vestidos</Link></li>
+                <li><Link className="nav-style" to="/category/amarillo">Contactanos</Link></li>
                 <CartWidget/>
             </ul>
         </nav>

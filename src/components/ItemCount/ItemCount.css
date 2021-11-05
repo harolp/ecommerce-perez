@@ -19,5 +19,15 @@
     height: 20px;
     margin: 20px;
     text-align: center;
-    background-color: skyblue;
+    background-color: rgb(177, 229, 250);
+}
+
+.addCart {
+    font-size: 18px;
+    margin: 10px;
+    background-color: rgb(129, 207, 201);
+}
+
+.btn-body {
+    padding: 40px;
 }

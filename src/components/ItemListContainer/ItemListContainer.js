@@ -8,8 +8,7 @@ export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
 
-    const { id } = useParams();
-    console.log(id)
+    const { categoryId } = useParams();
 
     const getProducts = (data) =>
         new Promise((resolve,reject) => {
@@ -24,9 +23,9 @@ export const ItemListContainer = () => {
 
         useEffect(() => {
             getProducts(Productos)
-            .then((result) => setProducts(result.filter((products) => products.category === id)))
+            .then((result) => setProducts(result.filter((products) => products.category === categoryId)))
             .catch((err) => console.log(err));
-        }, [id]);
+        }, [categoryId]);
 
         return (
             <>

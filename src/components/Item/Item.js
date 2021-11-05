@@ -12,7 +12,7 @@ export const Item = ({id, title, stock, price, thumbnailUrl}) => {
                 <span>Precio: {price}</span>
                 <ItemCount stock={stock} initial="1"/>
             </div>
-            <Link to={'/item/${id}'}>
+            <Link to={`/item/${id}`}>
                 <button>Ver más</button>
             </Link>
         </div>

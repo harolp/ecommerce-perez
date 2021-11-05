@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import Productos from "../../Productos.json";
+import './ItemDetailContainer.css'
 import { useParams } from "react-router";
 
 export const ItemDetailContainer = () => {   
@@ -22,16 +23,16 @@ export const ItemDetailContainer = () => {
 
         useEffect(() => {
             getItemDetail(Productos)
-            .then((result) => { setItemDetail(result.find((details) => details.id === itemId));
+            .then((result) => { setItemDetail(result.find((details) => details.id === Number(itemId)));
             })
             .catch((err) => console.log(err));
         }, [itemId]);
 
         return (
             <>
-                <h2>PROBANDO DETALLE</h2>
-                <div className="contenedor-detail">
-                    {itemDetail ? (
+                <h2 className="title-detail">DETALLE DE PRODUCTO</h2>
+                <div>
+                    {itemDetail && 
                         <ItemDetail
                             id={itemDetail.id}
                             title={itemDetail.title}
@@ -40,7 +41,7 @@ export const ItemDetailContainer = () => {
                             description={itemDetail.description}
                             thumbnailUrl={itemDetail.thumbnailUrl}
                         />
-                    ): ("testeando :(")}
+                    }
                 </div>
             </>
 

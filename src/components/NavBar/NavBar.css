@@ -17,10 +17,8 @@ ul {
     transition: 0.3s;
 }
 
-a {
-    text-decoration: none;
+li {
     font-size: 1.4rem;
-    color: #374c56;
     font-weight: bold;
     padding: 0 30px;
 }
@@ -28,4 +26,9 @@ a {
 .imgLogo {
     width: 50%;
     padding: 10px 0px 10px 0px;
+}
+
+.nav-style {
+    text-decoration: none;
+    color: #374c56;
 }

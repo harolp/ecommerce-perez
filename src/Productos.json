@@ -4,39 +4,44 @@
         "id": 1,
         "title": "Conjunto de bebé 2 piezas",
 	    "stock": 10,
-        "thumbnailUrl": "img/img1.png",
-        "description": "Aqui deberia ir una descripcion del producto."
+        "thumbnailUrl": "/img/img1.png",
+        "description": "Aqui deberia ir una descripcion del producto.",
+        "category": "rojo"
     },
     {
         "price": 30000,
         "id": 2,
         "title": "Conjunto estampado en Algodón",
 	    "stock": 10,
-        "thumbnailUrl": "img/img2.png",
-        "description": "Aqui deberia ir una descripcion del producto."
+        "thumbnailUrl": "/img/img2.png",
+        "description": "Aqui deberia ir una descripcion del producto.",
+        "category": "azul"
     },
     {
         "price": 25000,
         "id": 3,
         "title": "Conjunto de bebé Niño",
 	    "stock": 5,
-        "thumbnailUrl": "img/img3.png",
-        "description": "Aqui deberia ir una descripcion del producto."
+        "thumbnailUrl": "/img/img3.png",
+        "description": "Aqui deberia ir una descripcion del producto.",
+        "category": "azul"
     },
     {
         "price": 19000,
         "id": 4,
         "title": "Conjunto de bebé Floral",
 	    "stock": 10,
-        "thumbnailUrl": "img/img4.png",
-        "description": "Aqui deberia ir una descripcion del producto."
+        "thumbnailUrl": "/img/img4.png",
+        "description": "Aqui deberia ir una descripcion del producto.",
+        "category": "amarillo"
     },
     {
         "price": 29000,
         "id": 5,
         "title": "Conjunto Unisex",
 	    "stock": 10,
-        "thumbnailUrl": "img/img5.png",
-        "description": "Aqui deberia ir una descripcion del producto."
+        "thumbnailUrl": "/img/img5.png",
+        "description": "Aqui deberia ir una descripcion del producto.",
+        "category": "amarillo"
     }
 ]
