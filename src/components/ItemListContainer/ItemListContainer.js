@@ -1,14 +1,14 @@
 import Productos from "../../Productos.json";
 import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
 import "./ItemListContainer.css"
+import { useParams } from "react-router";
 
 export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
 
-    const { categoryId } = useParams();
+    const {categoryId} = useParams();
 
     const getProducts = (data) =>
         new Promise((resolve,reject) => {

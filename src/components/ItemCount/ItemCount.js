@@ -1,11 +1,11 @@
 import { useState } from "react";
 import './ItemCount.css'
 
-export const ItemCount = (props) => {
-    const [count, setCount] = useState(parseInt(props.initial));
+export const ItemCount = ({stock, desaparecer}) => {
+    const [count, setCount] = useState(1);
 
     function onAdd (){
-        if (count < props.stock){
+        if (count < stock){
             setCount(count + 1);
         }
     }
@@ -21,7 +21,7 @@ export const ItemCount = (props) => {
             <input className="inpt" type="text" value={count}/>
             <button className="btnRemove" onClick={onRemove}> - </button>
             <button className="btnAdd" onClick={onAdd}> + </button>
-            <button className="addCart">Agregar al carro</button>
+            <button className="addCart" onClick={desaparecer}>Agregar al carro</button>
         </div>
     )
 

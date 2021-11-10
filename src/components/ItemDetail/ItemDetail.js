@@ -1,8 +1,17 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 import './ItemDetail.css'
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const ItemDetail = ({id, title, stock, price, thumbnailUrl, description}) => {
 
+    const [flag, setFlag] = useState(true);
+
+    const desaparecer = () => {
+        setFlag(false);
+    };
+
+    
     return (
         <div className="card-detail" key={id}>
             <img src={thumbnailUrl} alt="imgProducto"/>
@@ -11,7 +20,10 @@ export const ItemDetail = ({id, title, stock, price, thumbnailUrl, description})
                 <p className="description-product">{description}</p>
                 <span className="stock-product">Stock: {stock}</span>
                 <span className="price-product">$ {price}</span>
-                <ItemCount stock={stock} initial="1"/>
+                {flag ? (<ItemCount stock={stock} desaparecer={desaparecer}/>) : (
+                    <Link to="/cart">
+                        <button>Ver carrito</button>
+                    </Link>)}
             </div>
         </div>
 
